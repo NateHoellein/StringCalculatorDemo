@@ -11,6 +11,11 @@
 @implementation StringCalculator
 
 -(int)add:(NSString *)sequence {
-    return [sequence intValue];
+    NSArray *items = [sequence componentsSeparatedByString:@","];
+    int answer = 0;
+    for (int i = 0; i < [items count]; i++) {
+        answer += [[items objectAtIndex:i] intValue];
+    }
+    return answer;
 }
 @end

@@ -31,7 +31,13 @@
 {
     StringCalculator *calc = [[StringCalculator alloc] init];
     int answer = [calc add:@"0"];
-    XCTAssertEqual(0, answer, @"Expected %d to equal %d", 0, answer);
+    XCTAssertEqual(0, answer, @"testAddingSingleDigit");
 }
 
+- (void)testAddingCommaDelimitedString
+{
+    StringCalculator *calc = [[StringCalculator alloc] init];
+    int answer = [calc add:@"0,1"];
+    XCTAssertEqual(1, answer, @"testAddingCommaDelimitedString");
+}
 @end
