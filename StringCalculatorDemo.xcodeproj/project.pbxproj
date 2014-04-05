@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		58E7F5D16831421794121E39 /* libPods-StringCalculatorDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2769A009ED4FB8B427363C /* libPods-StringCalculatorDemoTests.a */; };
 		B8DDC15E18F045D500D4F659 /* MainControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DDC15D18F045D500D4F659 /* MainControllerTests.m */; };
-		B8DDC16118F048CF00D4F659 /* StringCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DDC16018F048CF00D4F659 /* StringCalculatorTests.m */; };
 		B8DDC16418F0498E00D4F659 /* AddingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DDC16318F0498E00D4F659 /* AddingTests.m */; };
 		B8F31A9E18F0447600C88D92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F31A9D18F0447600C88D92 /* Foundation.framework */; };
 		B8F31AA018F0447600C88D92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F31A9F18F0447600C88D92 /* CoreGraphics.framework */; };
@@ -40,7 +39,6 @@
 		581D54ABF0914D50A0CC05C1 /* Pods-StringCalculatorDemoTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StringCalculatorDemoTests.xcconfig"; path = "Pods/Pods-StringCalculatorDemoTests.xcconfig"; sourceTree = "<group>"; };
 		8B2769A009ED4FB8B427363C /* libPods-StringCalculatorDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StringCalculatorDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DDC15D18F045D500D4F659 /* MainControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainControllerTests.m; sourceTree = "<group>"; };
-		B8DDC16018F048CF00D4F659 /* StringCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = StringCalculatorTests.m; path = StringCalculatorDemoTests/CalculatorTests/StringCalculatorTests.m; sourceTree = "<group>"; };
 		B8DDC16318F0498E00D4F659 /* AddingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddingTests.m; sourceTree = "<group>"; };
 		B8F31A9A18F0447600C88D92 /* StringCalculatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StringCalculatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F31A9D18F0447600C88D92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -106,7 +104,6 @@
 		B8F31A9118F0447600C88D92 = {
 			isa = PBXGroup;
 			children = (
-				B8DDC16018F048CF00D4F659 /* StringCalculatorTests.m */,
 				B8F31AA318F0447600C88D92 /* StringCalculatorDemo */,
 				B8F31AC218F0447700C88D92 /* StringCalculatorDemoTests */,
 				B8F31A9C18F0447600C88D92 /* Frameworks */,
@@ -323,7 +320,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8DDC16418F0498E00D4F659 /* AddingTests.m in Sources */,
-				B8DDC16118F048CF00D4F659 /* StringCalculatorTests.m in Sources */,
 				B8DDC15E18F045D500D4F659 /* MainControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
