@@ -8,11 +8,11 @@
 
 #import <XCTest/XCTest.h>
 
-@interface StringCalculatorDemoTests : XCTestCase
+@interface StringCalculatorTests : XCTestCase
 
 @end
 
-@implementation StringCalculatorDemoTests
+@implementation StringCalculatorTests
 
 - (void)setUp
 {

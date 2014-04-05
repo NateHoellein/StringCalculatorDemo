@@ -22,7 +22,7 @@
 		B8F31ABE18F0447700C88D92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F31A9D18F0447600C88D92 /* Foundation.framework */; };
 		B8F31ABF18F0447700C88D92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F31AA118F0447600C88D92 /* UIKit.framework */; };
 		B8F31AC718F0447700C88D92 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B8F31AC518F0447700C88D92 /* InfoPlist.strings */; };
-		B8F31AC918F0447700C88D92 /* StringCalculatorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F31AC818F0447700C88D92 /* StringCalculatorDemoTests.m */; };
+		B8F31AC918F0447700C88D92 /* StringCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8F31AC818F0447700C88D92 /* StringCalculatorTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,7 +57,7 @@
 		B8F31ABC18F0447700C88D92 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B8F31AC418F0447700C88D92 /* StringCalculatorDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StringCalculatorDemoTests-Info.plist"; sourceTree = "<group>"; };
 		B8F31AC618F0447700C88D92 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B8F31AC818F0447700C88D92 /* StringCalculatorDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringCalculatorDemoTests.m; sourceTree = "<group>"; };
+		B8F31AC818F0447700C88D92 /* StringCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = StringCalculatorTests.m; path = ../StringCalculatorTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +91,14 @@
 				B8DDC15D18F045D500D4F659 /* MainControllerTests.m */,
 			);
 			path = ControllerTests;
+			sourceTree = "<group>";
+		};
+		B8DDC15F18F0477D00D4F659 /* CalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				B8F31AC818F0447700C88D92 /* StringCalculatorTests.m */,
+			);
+			path = CalculatorTests;
 			sourceTree = "<group>";
 		};
 		B8F31A9118F0447600C88D92 = {
@@ -153,8 +161,8 @@
 		B8F31AC218F0447700C88D92 /* StringCalculatorDemoTests */ = {
 			isa = PBXGroup;
 			children = (
+				B8DDC15F18F0477D00D4F659 /* CalculatorTests */,
 				B8DDC15C18F045AC00D4F659 /* ControllerTests */,
-				B8F31AC818F0447700C88D92 /* StringCalculatorDemoTests.m */,
 				B8F31AC318F0447700C88D92 /* Supporting Files */,
 			);
 			path = StringCalculatorDemoTests;
@@ -312,7 +320,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B8DDC15E18F045D500D4F659 /* MainControllerTests.m in Sources */,
-				B8F31AC918F0447700C88D92 /* StringCalculatorDemoTests.m in Sources */,
+				B8F31AC918F0447700C88D92 /* StringCalculatorTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
