@@ -10,6 +10,8 @@
 		58E7F5D16831421794121E39 /* libPods-StringCalculatorDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B2769A009ED4FB8B427363C /* libPods-StringCalculatorDemoTests.a */; };
 		B8DDC15E18F045D500D4F659 /* MainControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DDC15D18F045D500D4F659 /* MainControllerTests.m */; };
 		B8DDC16418F0498E00D4F659 /* AddingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DDC16318F0498E00D4F659 /* AddingTests.m */; };
+		B8DDC16818F04AF900D4F659 /* StringCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DDC16718F04AF900D4F659 /* StringCalculator.m */; };
+		B8DDC16918F04AF900D4F659 /* StringCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = B8DDC16718F04AF900D4F659 /* StringCalculator.m */; };
 		B8F31A9E18F0447600C88D92 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F31A9D18F0447600C88D92 /* Foundation.framework */; };
 		B8F31AA018F0447600C88D92 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F31A9F18F0447600C88D92 /* CoreGraphics.framework */; };
 		B8F31AA218F0447600C88D92 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8F31AA118F0447600C88D92 /* UIKit.framework */; };
@@ -40,6 +42,8 @@
 		8B2769A009ED4FB8B427363C /* libPods-StringCalculatorDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StringCalculatorDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8DDC15D18F045D500D4F659 /* MainControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainControllerTests.m; sourceTree = "<group>"; };
 		B8DDC16318F0498E00D4F659 /* AddingTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddingTests.m; sourceTree = "<group>"; };
+		B8DDC16618F04AF900D4F659 /* StringCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringCalculator.h; sourceTree = "<group>"; };
+		B8DDC16718F04AF900D4F659 /* StringCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringCalculator.m; sourceTree = "<group>"; };
 		B8F31A9A18F0447600C88D92 /* StringCalculatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StringCalculatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8F31A9D18F0447600C88D92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B8F31A9F18F0447600C88D92 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -101,6 +105,15 @@
 			path = CalculatorTests;
 			sourceTree = "<group>";
 		};
+		B8DDC16518F04AE200D4F659 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				B8DDC16618F04AF900D4F659 /* StringCalculator.h */,
+				B8DDC16718F04AF900D4F659 /* StringCalculator.m */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
 		B8F31A9118F0447600C88D92 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +149,7 @@
 		B8F31AA318F0447600C88D92 /* StringCalculatorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				B8DDC16518F04AE200D4F659 /* Calculator */,
 				B8F31AAC18F0447600C88D92 /* AppDelegate.h */,
 				B8F31AAD18F0447600C88D92 /* AppDelegate.m */,
 				B8F31AAF18F0447600C88D92 /* Main.storyboard */,
@@ -311,6 +325,7 @@
 			files = (
 				B8F31AB418F0447600C88D92 /* ViewController.m in Sources */,
 				B8F31AAE18F0447600C88D92 /* AppDelegate.m in Sources */,
+				B8DDC16818F04AF900D4F659 /* StringCalculator.m in Sources */,
 				B8F31AAA18F0447600C88D92 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8DDC16918F04AF900D4F659 /* StringCalculator.m in Sources */,
 				B8DDC16418F0498E00D4F659 /* AddingTests.m in Sources */,
 				B8DDC15E18F045D500D4F659 /* MainControllerTests.m in Sources */,
 			);

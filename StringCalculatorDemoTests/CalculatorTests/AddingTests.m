@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "StringCalculator.h"
 
 @interface AddingTests : XCTestCase
 
@@ -26,9 +27,11 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testAddingSingleDigit
 {
-    XCTAssertTrue(1, @"Should be true");
+    StringCalculator *calc = [[StringCalculator alloc] init];
+    int answer = [calc add:@"0"];
+    XCTAssertEqual(0, answer, @"Expected %d to equal %d", 0, answer);
 }
 
 @end
