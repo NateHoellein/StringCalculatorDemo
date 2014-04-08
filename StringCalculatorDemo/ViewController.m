@@ -14,6 +14,15 @@
 
 @implementation ViewController
 
+-(id)initWithStringCalculator:(StringCalculator* ) calculator {
+    
+    if(self) {
+        self = [super init];
+    }
+    _calculator = calculator;
+    return self;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -26,4 +35,18 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)add:(id)sender {
+    NSString *source = [_input text];
+    int answer = [_calculator add:source];
+    [_answer setText:[NSString stringWithFormat:@"%d",answer]];
+}
+
+- (IBAction)subtract:(id)sender {
+}
+
+- (IBAction)multiply:(id)sender {
+}
+
+- (IBAction)divide:(id)sender {
+}
 @end
