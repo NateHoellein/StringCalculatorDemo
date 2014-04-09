@@ -33,8 +33,8 @@ describe(@"The MainController should", ^ {
         StringCalculator *calculator = [StringCalculator mock];
         ViewController *controller = [[ViewController alloc] initWithStringCalculator:calculator];
         
-        UITextView *inputView = [UITextView nullMock];
-        UITextView *answerView = [UITextView nullMock];
+        UITextView *inputView = [UITextView mock];
+        UITextView *answerView = [UITextView mock];
         
         [inputView stub:@selector(text) andReturn:@"1,2,3"];
         
