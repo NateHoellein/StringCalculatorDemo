@@ -31,10 +31,17 @@ describe(@"The MainController should", ^ {
   
     it(@"get the answer for add", ^ {
         StringCalculator *calculator = [StringCalculator mock];
-        ViewController *controller = [[ViewController alloc] initWithStringCalculator:calculator];
         
-        UITextView *inputView = [UITextView mock];
-        UITextView *answerView = [UITextView mock];
+        UITextField *inputView = [UITextField nullMock];
+        UILabel *answerView = [UILabel nullMock];
+        
+        ViewController *controller = [[ViewController alloc] init];
+        
+        controller.input = inputView;
+        controller.answer = answerView;
+        controller.calculator = calculator;
+//        [controller stub:@selector(input) andReturn:inputView];
+//        [controller stub:@selector(answer) andReturn:answerView];
         
         [inputView stub:@selector(text) andReturn:@"1,2,3"];
         
